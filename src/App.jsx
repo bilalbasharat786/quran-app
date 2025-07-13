@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
   const [selectedSurah, setSelectedSurah] = useState(null);
-  const [darkMode, setDarkMode] = useState(false);
+  
   const [themeColor, setThemeColor] = useState('#28a745');
 
   useEffect(() => {
@@ -13,18 +13,11 @@ function App() {
   }, [themeColor]);
 
   return (
-    <div className={`App ${darkMode ? 'dark' : ''}`}>
+    <div>
       <header className="app-header">
         <h1>📖 Al-Quran App</h1>
         <div className="theme-controls">
-          <label>
-            <input
-              type="checkbox"
-              checked={darkMode}
-              onChange={() => setDarkMode(!darkMode)}
-            />{' '}
-            Dark Mode
-          </label>
+          
           <select onChange={(e) => setThemeColor(e.target.value)} value={themeColor}>
             <option value="#28a745">Green</option>
             <option value="#007bff">Blue</option>

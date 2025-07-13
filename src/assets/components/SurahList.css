@@ -18,6 +18,18 @@
   gap: 20px;
 }
 
+@keyframes infinite-border {
+  0% {
+    border-color: rgb(41, 124, 8);
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: black;
+  }
+}
+
 .surah-item {
   background-color: #fff;
   padding: 15px;
@@ -25,6 +37,8 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  border: 2px solid black;
+  animation: infinite-border 2s linear infinite;
 }
 
 .surah-item:hover {
@@ -36,4 +50,3 @@ body.dark .surah-item {
   background-color: #333;
   color: white;
 }
-
