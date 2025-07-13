@@ -1,0 +1,45 @@
+.surah-details {
+  text-align: left;
+  padding: 10px;
+}
+
+.back-button {
+  background-color: var(--theme-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ayahs {
+  max-height: 75vh;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+
+.ayah {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-left: 4px solid var(--theme-color);
+  border-radius: 5px;
+}
+
+.arabic {
+  font-size: 22px;
+  direction: rtl;
+  text-align: right;
+}
+
+.english {
+  color: #555;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+body.dark .ayah {
+  background-color: #222;
+  color: white;
+}

@@ -1,0 +1,45 @@
+:root {
+  --theme-color: #28a745;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.App {
+  text-align: center;
+}
+
+.App.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.app-header {
+  background-color: var(--theme-color);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-controls label {
+  margin-right: 10px;
+}
+
+.theme-controls select {
+  padding: 5px;
+}
+
+main {
+  padding: 20px;
+}
