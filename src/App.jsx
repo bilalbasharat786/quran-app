@@ -5,11 +5,6 @@ import './App.css';
 
 function App() {
   const [selectedSurah, setSelectedSurah] = useState(null);
-  
-  
-
-  
-
   return (
     <div>
       <header className="app-header">
